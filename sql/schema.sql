@@ -21,3 +21,6 @@ CREATE TABLE IF NOT EXISTS feedback
     created_at TIMESTAMP                      DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE CASCADE
 );
+
+INSERT INTO users (email, password)
+VALUES ('admin@test.com', '$2y$12$FfNaqosPH4QD/nJJKuq.X.h08xXkkyZTACpTSWcJww3vdUhvjJCWy');
